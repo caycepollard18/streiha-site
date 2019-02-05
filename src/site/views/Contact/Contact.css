@@ -1,0 +1,142 @@
+/**
+ * Contact.css
+ * @private
+ */
+
+/**********************************************...*/
+
+.card {
+	width: 75%;
+    min-height: 200px;
+    margin: auto;
+    
+    flex-grow: 1;
+
+    position: relative;
+    
+    background: white;
+}
+
+.card:before, .card:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	background: transparent;
+
+	box-shadow: 0 5px 10px red;
+	left: 5px;
+	bottom: 7px;
+
+	width: 50%;
+	top: 85%;
+
+	transform: rotate(-2deg);
+}
+
+.card:after {
+	right: 5px;
+	left: auto;
+
+	transform: rotate(2deg);
+}
+
+.contact-card {
+    padding: 1.6339869281%;
+    
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+	border: 1px solid red;
+}
+
+.contact-emails, 
+.contact-addresses,
+.contact-copy {
+    margin-bottom: 1.6339869281%;
+}
+
+.contact-emails > li,
+.contact-card h3 {
+	font-size: 1.0em;
+	
+	min-height: 27px;
+	height: auto;
+	width: 100%;
+
+	display: block;
+	position: relative;
+}
+
+.contact-emails > li > span {
+	float: right;
+}
+
+.contact-emails a:hover {
+	border-bottom: none;
+}
+
+.contact-copy {
+    flex-grow: 1;
+}
+
+.contact-copy > p {
+    text-align: justify;
+}
+
+.contact-copy > p a {
+    text-decoration: underline;
+}
+
+.contact-addresses {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+.contact-addresses > li {
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.contact-social-media > li {
+	text-align: right;
+}
+
+/********************************************MEDIA*/
+
+@media screen and (min-width: 425px) {
+	.contact-emails > li > strong:after {
+		font-weight: normal;
+		position: absolute;
+		left: 50%;
+		content: "...";
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.contact-addresses,
+	.contact-emails > li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.contact-addresses > li,
+	.contact-card h3,
+	.contact-emails > li > strong,
+	.contact-emails > li > span {
+		min-height: 0;
+		width: 100%;
+		margin-bottom: 3.2679738562%;
+
+		display: block;
+		text-align: justify;
+	}
+}
+
+/**********************************************...*/

@@ -1,0 +1,56 @@
+/**
+ * withPageTransition.css
+ * @private
+ */
+
+/**********************************************...*/
+
+body.skunkworks, 
+body.skunkworks form.login > input:not([type="submit"]),
+body.skunkworks form.login > input[type="submit"] {
+	background-color: red;
+}
+
+body.skunkworks form.login > input:not([type="submit"]),
+body.skunkworks form.login > input[type="submit"],
+body.skunkworks a,
+body.skunkworks a:hover,
+body.skunkworks nav > a:last-child {
+	border-color: white !important;
+}
+
+body.skunkworks,
+body.skunkworks form.login > input:not([type="submit"]),
+body.skunkworks form.login > input[type="submit"],
+body.skunkworks h1 > a {
+	color: white;
+}
+
+body.skunkworks h1 > a {
+	-webkit-text-fill-color: red;
+	-webkit-text-stroke-color: white;
+}
+
+body.skunkworks form.login > input:not([type="submit"]):focus,
+body.skunkworks form.login > input[type="submit"]:active {
+	background: linear-gradient(180deg, rgba(215,10,10,0.9), transparent 45%) !important;
+}
+
+body.skunkworks form.login > input[type="submit"]:active,
+body.skunkworks form.login > input[type="submit"]:hover {
+	box-shadow: 0 1px 3px rgba(215,10,10,0.36), 0 1px 2px rgba(215,10,10,0.48) !important;
+}
+
+/********************************************MEDIA*/
+
+@media screen and (max-width: 615px) {
+    body.skunkworks nav > a:active {
+        background: linear-gradient(180deg, rgba(215,10,10,0.9), transparent 45%) !important;
+    }
+
+    body.skunkworks nav > a:hover {
+        box-shadow: 0 1px 3px rgba(215,10,10,0.36), 0 1px 2px rgba(215,10,10,0.48) !important;
+    }
+}
+
+/**********************************************...*/

@@ -1,0 +1,75 @@
+/**
+ * FooterBar.css
+ * @private
+ */
+
+/**********************************************...*/
+
+.carriage {
+	min-height: 27px;
+	height: auto;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.carriage > span {
+	margin: 1.6339869281%;
+}
+
+/*
+.carriage .languages {
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carriage .languages > select {
+    padding: 2px 5px;
+
+    background: none;
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.carriage .languages > select:focus {
+    outline: none;
+}
+
+.carriage .languages > a {
+    padding: 3px 5px;
+
+    display: inline-block;
+}
+
+.carriage .languages > a.current-language {
+    font-weight: bold;
+}
+
+.carriage .languages > a:hover {
+    border: none;
+
+    text-decoration: underline;
+}
+
+.carriage .languages > a:last-child {
+    border-left: 1px solid red;
+}
+*/
+
+.carriage .copyright {
+    display: block;
+}
+
+/**********************************************...*/

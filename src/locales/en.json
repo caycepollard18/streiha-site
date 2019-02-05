@@ -1,0 +1,36 @@
+{
+    "pages": [
+        {
+            "slug": "about",
+            "title": "About Us",
+            "component": "About",
+            "isActive": true
+        },
+        {
+            "slug": "contact",
+            "title": "Contact Us",
+            "component": "Contact",
+            "content": {
+                "emails": [
+                    {
+                        "id": "bi",
+                        "title": "Business Inquiries",
+                        "mailto": "contact@streiha.com"
+                    },
+                    {
+                        "id": "pi",
+                        "title": "Press Information",
+                        "mailto": "press@streiha.com"
+                    }
+                ]
+            },
+            "isActive": true
+        },
+        {
+            "slug": "login",
+            "title": "Login",
+            "component": "Skunkworks",
+            "isActive": true
+        }
+    ]
+}
